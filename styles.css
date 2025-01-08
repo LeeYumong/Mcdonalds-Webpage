@@ -1,159 +1,200 @@
-/* Global Styles */
-body {
+/* General Styles */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    overflow-x: hidden;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 0 15px;
+body {
+    background-color: #f7f7f7;
+    color: #333;
 }
 
 /* Header */
 header {
-    background: #FFD700;
-    color: #333;
-    text-align: center;
-    padding: 10px 0;
+    background-color: #e7001e;
+    padding: 15px 0;
+    color: white;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2rem;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
 }
 
 header nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 header nav ul li a {
-    color: #333;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffcc00;
 }
 
 /* Hero Section */
 .hero {
-    background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2rem;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
-.hero .btn {
-    background: #FF0000;
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #e7001e;
+    padding: 12px 30px;
     color: white;
-    padding: 10px 20px;
+    font-size: 16px;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
 }
 
-.hero .btn:hover {
-    background: #CC0000;
+.cta-button:hover {
+    background-color: #ffcc00;
 }
 
-/* Products Section */
-.products {
-    padding: 50px 0;
+/* Menu Section */
+.menu {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.menu .container {
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.product-grid {
+.menu-items {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.product {
+.menu-item {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     text-align: center;
-    background: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
-    transition: transform 0.3s;
 }
 
-.product img {
-    width: 100%;
+.menu-item img {
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
-.product h3 {
-    margin: 10px 0;
+.menu-item h3 {
+    font-size: 24px;
+    margin-top: 15px;
 }
 
-.product:hover {
-    transform: scale(1.05);
+.menu-item p {
+    font-size: 16px;
+    color: #666;
 }
 
 /* About Section */
 .about {
-    background: #FFF3CD;
-    padding: 50px 0;
+    padding: 60px 0;
+    background-color: #f0f0f0;
     text-align: center;
+}
+
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #e7001e;
+}
+
+.about p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Contact Section */
 .contact {
-    padding: 50px 0;
+    padding: 60px 0;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
 
 .contact form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
 }
 
 .contact input, .contact textarea {
-    width: 60%;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .contact button {
-    background: #FF0000;
+    padding: 14px;
+    font-size: 18px;
+    background-color: #e7001e;
     color: white;
-    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .contact button:hover {
-    background: #CC0000;
+    background-color: #ffcc00;
 }
 
 /* Footer */
 footer {
-    background: #FFD700;
-    color: #333;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
 }

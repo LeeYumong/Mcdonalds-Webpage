@@ -3,86 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to McDonald's</title>
+    <title>McDonald's</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="https://www.mcdonalds.com/favicon.ico" type="image/x-icon">
 </head>
 <body>
+
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1>🍔 Welcome to McDonald's 🍟</h1>
+            <h1 class="logo">McDonald's</h1>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Deals</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h2>Experience the Taste of Happiness!</h2>
-            <p>Serving delicious meals with world-class service.</p>
-            <a href="#" class="btn">Order Now</a>
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Welcome to McDonald's!</h2>
+            <p>Enjoy our delicious menu and iconic meals served with love.</p>
+            <a href="#menu" class="cta-button">Explore the Menu</a>
         </div>
     </section>
 
-    <!-- Featured Products Section -->
-    <section class="products">
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
         <div class="container">
-            <h2>Our Favorites</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="https://via.placeholder.com/300x200" alt="Big Mac">
-                    <h3>Big Mac</h3>
-                    <p>The iconic Big Mac with our special sauce.</p>
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="images/burger.jpg" alt="Delicious Burger">
+                    <h3>Classic Burger</h3>
+                    <p>A mouth-watering beef patty with fresh lettuce, tomato, and cheese.</p>
                 </div>
-                <div class="product">
-                    <img src="https://via.placeholder.com/300x200" alt="McNuggets">
-                    <h3>Chicken McNuggets</h3>
-                    <p>Crispy and golden, a timeless classic.</p>
+                <div class="menu-item">
+                    <img src="images/fries.jpg" alt="Crispy Fries">
+                    <h3>Crispy Fries</h3>
+                    <p>Golden, crispy fries that complement any meal.</p>
                 </div>
-                <div class="product">
-                    <img src="https://via.placeholder.com/300x200" alt="Fries">
-                    <h3>World Famous Fries</h3>
-                    <p>Golden and crispy fries, every time.</p>
+                <div class="menu-item">
+                    <img src="images/drink.jpg" alt="Refreshing Drink">
+                    <h3>Refreshing Drink</h3>
+                    <p>Chilled sodas and beverages to keep you refreshed.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Us Section -->
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
-            <h2>About Us</h2>
-            <p>At McDonald's, we're proud to serve the world some of its favorite food. From Big Macs to McNuggets, every bite tells a story of quality and care.</p>
+            <h2 class="section-title">About Us</h2>
+            <p>McDonald's has been serving delicious food for over 60 years. From our iconic burgers to our refreshing drinks, we pride ourselves on quality, taste, and service.</p>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <h2>Get in Touch</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
+            <h2 class="section-title">Contact Us</h2>
+            <p>Have questions? Feel free to reach out!</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 McDonald's. All Rights Reserved.</p>
+            <p>&copy; 2024 McDonald's Corporation. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>
