@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .container {
@@ -15,8 +16,8 @@ body {
 header {
     background: #FFD700;
     color: #333;
-    padding: 10px 0;
     text-align: center;
+    padding: 10px 0;
 }
 
 header h1 {
@@ -31,7 +32,7 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
@@ -46,7 +47,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 80px 0;
@@ -65,31 +66,87 @@ header nav ul li a:hover {
 .hero .btn {
     background: #FF0000;
     color: white;
-    text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .hero .btn:hover {
     background: #CC0000;
 }
 
-/* Features Section */
-.features {
-    text-align: center;
+/* Products Section */
+.products {
     padding: 50px 0;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    text-align: center;
     background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s;
 }
 
-.features .feature {
-    margin: 20px 0;
+.product img {
+    width: 100%;
+    border-radius: 8px;
 }
 
-.features h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #FF0000;
+.product h3 {
+    margin: 10px 0;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    background: #FFF3CD;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input, .contact textarea {
+    width: 60%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #CC0000;
 }
 
 /* Footer */
