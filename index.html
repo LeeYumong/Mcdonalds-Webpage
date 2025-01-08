@@ -5,26 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to McDonald's</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://www.mcdonalds.com/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>🍟 Welcome to McDonald's 🍔</h1>
+        <div class="container">
+            <h1>🍟 Welcome to McDonald's 🍔</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-    </nav>
+
     <main>
-        <section>
-            <h2>Delicious Meals Served Fresh!</h2>
-            <p>Come and enjoy our world-famous fries and burgers.</p>
-            <img src="https://via.placeholder.com/600x300" alt="Delicious McDonald's food">
+        <section class="hero">
+            <div class="container">
+                <h2>Delicious Meals Served Fresh!</h2>
+                <p>Experience world-famous burgers, fries, and more—hot and ready just for you!</p>
+                <a href="#" class="btn">Explore Menu</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="feature">
+                    <h3>🍔 Quality Ingredients</h3>
+                    <p>We use only the freshest ingredients to ensure every bite is delicious.</p>
+                </div>
+                <div class="feature">
+                    <h3>🚗 Fast Delivery</h3>
+                    <p>Get your meal delivered hot and fresh to your doorstep.</p>
+                </div>
+                <div class="feature">
+                    <h3>💳 Easy Payment</h3>
+                    <p>Pay securely with multiple payment options available.</p>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>© 2024 McDonald's. All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 McDonald's. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
